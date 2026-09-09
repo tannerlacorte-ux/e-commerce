@@ -6,6 +6,7 @@
   <title>Library</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/a91597307b.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -19,6 +20,20 @@
           <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
         </ul>
       </div>
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul>
+          <li class="menu__list"><a href="#features" class="menu__link" onclick="closeMenu()">Home</a></li>
+          <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Books</a></li>
+          <li class="menu__lis"><a class="menu__link no-cursor" onclick="closeMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
     </nav>
     <header>
       <div class="header__container">
