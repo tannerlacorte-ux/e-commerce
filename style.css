@@ -36,6 +36,20 @@ a:hover {
   text-decoration: underline;
 }
 
+
+h1 {
+  font-size: 56px;
+  color: #7342d6;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
 .nav__container {
   width: 100%;
   max-width: 1200px;
@@ -87,7 +101,6 @@ li {
 .btn__menu {
   background-color: transparent;
   font-size: 40px;
-  text-align: center;
   border: none;
   color:#7342d6;
   display: none;
@@ -104,19 +117,20 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
   transition: all 300ms ease;
   opacity: 0;
-  visibility: hidden;
+  transform: translate(100%);
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .menu--open .menu__backdrop {
   visibility: visible;
   opacity: 1;
-}
-
-.menu--open {
-  max-height: 100vh;
-  overflow-y: hidden;
 }
 
 .menu__links {
