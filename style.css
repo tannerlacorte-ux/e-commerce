@@ -131,6 +131,7 @@ li {
 .menu--open .menu__backdrop {
   visibility: visible;
   opacity: 1;
+  transform: translate(0);
 }
 
 .menu__links {
@@ -425,11 +426,11 @@ color: white;
 }
 
 
-SMALL PHONES
+/* SMALL PHONES */
 
 @media (max-width: 550px) {
   .nav__links {
-    dislpay: none;
+    display: none;
   }
 
   .btn__menu {
